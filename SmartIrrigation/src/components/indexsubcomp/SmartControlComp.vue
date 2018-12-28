@@ -3,7 +3,7 @@
 		<SubHeaderCommon title="滴水智能控制" iContent="local_cafe"></SubHeaderCommon>
 		<div class="content">
 			<div class="row">
-				<div class="col s12 m6">
+				<div class="col s12  m12 l6">
 					<div class="card grey lighten-4">
 						<div class="card-content black-text">
 							<span class="card-title"> <i class="icon iconfont icon-water-switch" style="color: #689f38;font-size: 24px;font-size: 34px;position: relative;right: 10px;"></i>滴水控制-时间段(每天)</span>
@@ -36,7 +36,7 @@
 					</div>
 				</div>
 
-				<div class="col s12 m6">
+				<div class="col s12 m12 l6">
 					<div class="card grey lighten-4">
 						<div class="card-content black-text">
 							<span class="card-title"> <i class="icon iconfont icon-water-switch" style="color: #689f38;font-size: 24px;font-size: 34px;position: relative;right: 10px;"></i>滴水控制-温度值</span>
@@ -66,7 +66,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col s12 m6">
+				<div class="col s12 m12 l6">
 					<div class="card grey lighten-4">
 						<div class="card-content black-text">
 							<span class="card-title"> <i class="icon iconfont icon-water-switch" style="color: #689f38;font-size: 24px;font-size: 34px;position: relative;right: 10px;"></i>滴水控制-湿度值</span>

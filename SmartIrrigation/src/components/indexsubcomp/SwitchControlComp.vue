@@ -26,7 +26,7 @@
 		<div class="content content-light">
 			<div class="row">
 
-				<div class="col s12 m6" v-for="item in $store.state.mqttLightRelayState" :key="item.deviceID">
+				<div class="col s12 m12 l6" v-for="item in $store.state.mqttLightRelayState" :key="item.deviceID">
 					<div class="card grey lighten-4">
 						<div class="card-content black-text">
 							<span class="card-title">滴水{{parseInt(item.deviceID, 16)}}控制</span>

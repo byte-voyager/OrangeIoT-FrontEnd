@@ -86,7 +86,7 @@
 
 	.email-setting button{
 		margin-top: 20px;
-		position: absolute;
+		/*position: absolute;*/
 	}
 
 	@media screen and (max-width: 600px) {
@@ -96,6 +96,7 @@
 		}
 		.email-setting button {
 			right: 0;
+			float: right;
 		}
 	}
 </style>

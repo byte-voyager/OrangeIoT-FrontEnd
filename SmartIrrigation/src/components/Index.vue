@@ -151,8 +151,9 @@
             this.userData.name = resp.data.data.name
           }
         }).catch(err=>{
-          alert(err)
-          console.log('未知失败')
+          // alert(err)
+          // console.log('未知失败')
+          console.log(err)
         }).finally(()=>{
           cb()
         })
@@ -280,6 +281,7 @@
       // 2 获取订阅需要的用户名和密码 订阅消息
       // 3 创建MQTT连接 把接收到的数据存储到vuex
       // 4 HumTmpListenComp.vue 需要获取vuex的数据
+      this.$axios.get('csrf')
       window.indexThis = this
         this.checkLogin(()=>{
         if (this.userData.name==null) {

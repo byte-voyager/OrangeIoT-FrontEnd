@@ -15,7 +15,7 @@
 							<!--<i class="material-icons">chat_bubble</i>-->
 						<!--</a>-->
 					<!--</li>-->
-					<li class="hide-on-med-and-down">
+					<li class="hide-on-small-only">
 						<router-link to="/help" tag="a" class="setting-button">
 							<i class="material-icons">help</i>
 						</router-link>
@@ -59,7 +59,7 @@
 				<div class="divider"></div>
 			</li>
 			<!--<li><a class="subheader"></a></li>-->
-			<li><router-link to="/login" tag="a" class="sidenav-close"><i class="material-icons">exit_to_app</i>退出登陆</router-link></li>
+			<li><router-link to="/login" tag="a" class="sidenav-close"><i class="material-icons">exit_to_app</i>切换帐号</router-link></li>
 		</ul>
 
 
