@@ -39,6 +39,7 @@
 				</div>
 			</div>
 		</div>
+		<div style="text-align: center"><a v-on:click.prevent="exitLogin()" style="color: red; border-bottom: solid 1px;">退出当前帐号</a></div>
 	</div>
 </template>
 
@@ -59,6 +60,15 @@
       }
     },
 	  methods: {
+      exitLogin() {
+        this.$axios.delete('users/sessions', {headers: {'X-CSRFTOKEN': utils.getCookie('csrf_token')}, data: {name: 'alonebo'}}).then(resp=>{
+          console.log(resp)
+          location.href = '/login.html'
+        }).catch(resp=>{
+          console.log(resp)
+          // location.href = '/login.html?d=exiterr'
+        })
+      },
       login() {
         console.log(this.userName, this.userPassword)
         this.$axios.post('users/sessions',
