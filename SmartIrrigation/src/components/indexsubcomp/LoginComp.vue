@@ -4,8 +4,8 @@
 			<div class="row">
 				<div class="col s12 offset-m2 m8 card-panel">
 					<div class="center">
-						<h4>登陆</h4>
-						<p class="hide-on-small-only">以管理员登陆，或者普通用户登陆。</p>
+						<h4>登录</h4>
+						<p class="hide-on-small-only">以管理员登录，或者普通用户登录。</p>
 						<p>默认用户:admin， 默认密码:alonebo</p>
 					</div>
 					<form class="col s12" id="login-form">
@@ -31,7 +31,7 @@
 							<span class="login-error" v-show="isShowErrmsgTop">{{errmsgTip}}</span>
 							<div class="col offset-s7 s5">
 								<button class="btn waves-effect waves-light white light-green-text text-darken-2 right" type="submit" v-on:click.prevent="login()">
-									登陆 <i class="mdi mdi-send right text-darken-2"></i>
+									登录 <i class="mdi mdi-send right text-darken-2"></i>
 								</button>
 							</div>
 						</div>
@@ -83,14 +83,14 @@
             console.log(resp)
             if (resp.data.errno == RET.OK) {
               location.href = '/index.html'
-	            console.log('登陆成功')
+	            console.log('登录成功')
             } else {
               this.errmsgTip = resp.data.errmsg
               this.isShowErrmsgTop = true
               this.generateImageCode()
             }
           }).catch(err => {
-          this.errmsgTip = '登陆失败，请检查网络。'
+          this.errmsgTip = '登录失败，请检查网络。'
           this.isShowErrmsgTop = true
           alert(err)
         })
